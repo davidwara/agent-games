@@ -480,7 +480,7 @@ function handleRequest(req, res) {
     logLine(req, result.status, Date.now() - startedAt);
   };
 
-  if (req.method === "GET" && (req.url === "/health" || req.url === "/")) {
+  if (req.method === "GET" && (req.url === "/health" || req.url === "/" || req.url === "/api/agent" || req.url === "/api/agent/health")) {
     const body = JSON.stringify({
       ok: true,
       protocolVersion: PROTOCOL_VERSION,
@@ -493,7 +493,7 @@ function handleRequest(req, res) {
     return;
   }
 
-  if (req.method === "POST" && (req.url === "/agent" || req.url === "/")) {
+  if (req.method === "POST" && (req.url === "/agent" || req.url === "/" || req.url === "/api/agent")) {
     const chunks = [];
     req.on("data", (c) => chunks.push(c));
     req.on("end", async () => {
