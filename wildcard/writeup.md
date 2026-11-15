@@ -3,8 +3,8 @@
 **One-line pitch:** An API that tells you whether a token approval is safe *before*
 you sign it — SAFE, CAUTION or DANGER, with the on-chain facts to back it up.
 
-- **Live endpoint:** `<WORKER_URL>` (fill in after deploy)
-- **Repo:** `<REPO_URL>` (fill in after publishing)
+- **Live endpoint:** `https://wallet-guard.hariadyharis.workers.dev`
+- **Repo:** `https://github.com/davidwara/agent-games`
 - **Track:** Wildcard
 - **Stack:** One Cloudflare Worker file, plain JavaScript, no build step, no
   secrets, no API keys, no database. Only public read-only JSON-RPC endpoints.
@@ -150,7 +150,7 @@ worker lists Blast first for Ethereum and falls back automatically.
 
 ## Links
 
-- Live endpoint: `<WORKER_URL>`
-- Repo / source: `<REPO_URL>`
+- Live endpoint: `https://wallet-guard.hariadyharis.workers.dev`
+- Repo / source: `https://github.com/davidwara/agent-games`
 - Deploy: paste `wallet-guard-worker.js` into a Cloudflare Worker and hit Deploy —
   no build step, no environment variables.
