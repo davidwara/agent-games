@@ -1,1 +1,1 @@
-{"$schema":"https://openapi.vercel.sh/vercel.json","functions":{"api/agent.js":{"maxDuration":10}}}
+{"$schema":"https://openapi.vercel.sh/vercel.json","functions":{"api/agent.js":{"maxDuration":10}},"rewrites":[{"source":"/","destination":"/api/agent"},{"source":"/health","destination":"/api/agent"},{"source":"/agent","destination":"/api/agent"}]}
